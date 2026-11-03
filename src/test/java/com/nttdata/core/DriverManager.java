@@ -60,7 +60,6 @@ public class DriverManager {
         }
     }
 
-
     public static void screenShot() {
         if (driver != null && scenario != null) {
             byte[] evidencia = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
@@ -68,7 +67,7 @@ public class DriverManager {
         }
     }
 
-    // Pausa amigable en segundos para que dé tiempo a narrar en el video
+
     public static void pausar(int segundos) {
         try {
             Thread.sleep(segundos * 1000L);
